@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="icon"
+            type="image/png"
+            href="favicon-96x96.png"
+            sizes="96x96"
+        />
+
+        <title>VanWaMakers</title>
+        <style>
+            /*  Variables */
+            :root {
+                --big-header-text: #4682b4;
+                --bg-color: #e6e6e0;
+                --bg-card: #fff9b1;
+                --text-main: #000;
+                --font-stack:
+                    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                    "Helvetica Neue", Arial, sans-serif;
+            }
+
+            /* Fullscreen Reset */
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                background-color: var(--bg-color);
+                color: var(--text-main);
+                font-family: var(--font-stack);
+                -webkit-font-smoothing: antialiased;
+
+                /* Center content perfectly on screen */
+                display: flex;
+                justify-content: center;
+                min-height: 100vh;
+                padding: 15px;
+            }
+
+            .main {
+                text-align: center;
+                max-width: 680px;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                font-size: 1.1rem;
+            }
+
+            .top-header {
+                text-align: center;
+                font-size: 2.1rem;
+                font-weight: 500;
+                letter-spacing: 0.08rem;
+            }
+
+            .big-header {
+                margin-top: -18px;
+                text-align: center;
+                font-size: 5rem;
+                font-weight: 900;
+                letter-spacing: 0.04em;
+                color: var(--big-header-text);
+                text-shadow:
+                    -1px -1px 1px rgba(255, 255, 255, 0.75),
+                    -2px -2px 2px rgba(255, 255, 255, 0.5),
+                    -3px -3px 3px rgba(255, 255, 255, 0.25),
+                    1px 1px 1px rgba(0, 0, 0, 0.75),
+                    2px 2px 2px rgba(0, 0, 0, 0.5),
+                    3px 3px 3px rgba(0, 0, 0, 0.25);
+            }
+
+            .text-block {
+                display: flex;
+                text-align: left;
+                margin-bottom: 1.6rem;
+                line-height: 1.4rem;
+            }
+
+            .info-text {
+                text-align: right;
+                color: #777;
+                font-size: 0.8rem;
+                font-weight: 500;
+            }
+
+            .text-card {
+                background-color: var(--bg-card);
+                text-align: left;
+                border: 2px solid #777;
+                border-radius: 0.5rem;
+                padding: 1.5rem;
+                box-shadow: 3px 3px 0 #666;
+                line-height: 1.5rem;
+            }
+
+            .right-arrow {
+                margin-right: 0.5rem;
+                border: solid black;
+                border-width: 0 3px 3px 0;
+                display: inline-block;
+                padding: 3px;
+                margin-bottom: 2px;
+                transform: rotate(-45deg);
+                -webkit-transform: rotate(-45deg);
+            }
+
+            .option-row {
+                line-height: 0.8rem;
+                margin: 1rem 0 2rem 0;
+            }
+
+            /* option button */
+            .option-btn {
+                position: relative;
+                background: #999;
+                box-shadow:
+                    2px 2px 3px 2px #bbb inset,
+                    -2px -2px 3px 2px #777 inset;
+                color: #fff;
+                border: none;
+                border-radius: 9px;
+                padding: 5px 10px;
+                font-weight: 600;
+                cursor: pointer;
+            }
+            .option-btn:hover {
+                box-shadow: none;
+            }
+
+            .option-btn:active,
+            .option-btn:focus {
+                outline: 0;
+            }
+
+            /* option links */
+            .cta-link {
+                display: inline-block;
+                color: var(--text-main);
+                font-weight: 500;
+                font-size: 1rem;
+                cursor: hand;
+            }
+
+            .cta-link:hover {
+                color: #777;
+            }
+
+            /* Responsiveness for small phones */
+            @media (max-width: 650px) {
+                .top-header {
+                    font-size: 1rem;
+                }
+                .big-header {
+                    margin-top: 0;
+                    font-size: 2.6rem;
+                }
+            }
+        </style>
+        <link rel="stylesheet" href="MailerLite.css" />
+        <script src="MailerLiteHeader.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <main class="main">
+            <div class="top-header">Vancouver Washington Makerspace</div>
+            <div class="big-header">VanWaMakers</div>
+
+            <div class="text-block">
+                Our mission is to cultivate an inclusive, community operated
+                Makerspace where creativity, collaboration, and shared knowledge
+                empower individuals to learn, build, and innovate together. We
+                are committed to equitable access, hands-on education, and
+                mutual support — providing the tools, resources, and community
+                connections that transform ideas into reality.
+            </div>
+            <div class="text-card">
+                The Vancouver Washington Makerspace is just getting started!
+                Although we don't have a space yet, this is your opportunity to
+                help shape our community from the ground up. Whether you'd like
+                to be part of creating the makerspace or simply follow our
+                progress, we invite you to join our email list or Discord
+                server. You'll receive updates on our planning meetings,
+                milestones, and opportunities to get involved.
+                <div class="option-row">
+                    <span class="right-arrow"></span>Send us an email:
+                    <a
+                        target="_blank"
+                        href="mailto:info@vanwamakers.org"
+                        class="cta-link"
+                        >info@vanwamakers.org
+                    </a>
+                    <span class="info-text"
+                        >(link opens default email app)</span
+                    >
+                </div>
+                <div class="option-row">
+                    <span class="right-arrow"></span>Join our email list:
+                    <button
+                        class="option-btn ml-onclick-form"
+                        onclick="ml('show', '9x8SuY', true)"
+                    >
+                        Enter my name and email
+                    </button>
+                </div>
+                <div class="option-row">
+                    <span class="right-arrow"></span>Join our Discord server:
+                    <a
+                        target="_blank"
+                        href="https://discord.gg/NRwkFdX4sF"
+                        class="cta-link"
+                        >https://discord.gg/NRwkFdX4sF
+                    </a>
+                    <span class="info-text">(link opens new tab)</span>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
