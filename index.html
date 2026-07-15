@@ -110,12 +110,18 @@
                 -webkit-transform: rotate(-45deg);
             }
 
-            .option-row {
-                line-height: 0.8rem;
-                margin: 1rem 0 2rem 0;
+            .option-list {
+              list-style-type: none;
+              padding: 0;
+              margin: 0;
             }
 
-            /* option button */
+            .option-row {
+                text-indent: -1rem;
+                line-height: 1rem;
+                margin: 1rem 0 1.6rem 1rem;
+            }
+
             .option-btn {
                 position: relative;
                 background: #999;
@@ -140,7 +146,6 @@
 
             /* option links */
             .cta-link {
-                display: inline-block;
                 color: var(--text-main);
                 font-weight: 500;
                 font-size: 1rem;
@@ -186,7 +191,8 @@
                 progress, we invite you to join our email list or Discord
                 server. You'll receive updates on our planning meetings,
                 milestones, and opportunities to get involved.
-                <div class="option-row">
+                <ul class="option-list">
+                <li class="option-row">
                     <span class="right-arrow"></span>Send us an email:
                     <a
                         target="_blank"
@@ -197,8 +203,8 @@
                     <span class="info-text"
                         >(link opens default email app)</span
                     >
-                </div>
-                <div class="option-row">
+                </li>
+                <li class="option-row">
                     <span class="right-arrow"></span>Join our email list:
                     <button
                         class="option-btn ml-onclick-form"
@@ -206,8 +212,8 @@
                     >
                         Enter my name and email
                     </button>
-                </div>
-                <div class="option-row">
+                </li>
+                <li class="option-row">
                     <span class="right-arrow"></span>Join our Discord server:
                     <a
                         target="_blank"
@@ -216,7 +222,8 @@
                         >https://discord.gg/NRwkFdX4sF
                     </a>
                     <span class="info-text">(link opens new tab)</span>
-                </div>
+                </li>
+                </ul>
             </div>
         </main>
     </body>
